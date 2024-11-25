@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.planet ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 1em;
+}
+
+.planet ul::-webkit-scrollbar {
+    display: none;
+}
+
+.planet ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(16, 16, 16);
+    min-width: 15em;
+    width: 20vw;
+    text-align: center;
+    border-radius: 1em;
+    height: 25em;
+    flex: 0 0 auto;
+    margin: 0 0.5em;
+    transition: 700ms ease;
+}
+
+.planet ul li:hover {
+    transform: scale(1.05);
+    background-color: rgb(8, 8, 8);
+}
+
+.planet {
+    padding: 1em;
+}
+
+.planet img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0.5em;
+}
