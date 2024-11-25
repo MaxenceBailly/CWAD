@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body {
+    padding-top: 5em;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+main .formules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .formules div h2 {
+    font-size: 1.5em;
+}
+
+main .formules div {
+    max-width: 18em;
+    max-height: 30em;
+    overflow: scroll;
+    background-color: rgba(22, 21, 21, 0.852);
+    border-radius: 1em;
+    margin: 1em 1em;
+    transition: transform 0.4s ease;
+}
+
+main .formules div:hover {
+    transform: translateY(-0.5em);
+}
+
+main .formules div img {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+main .formules div p {
+    margin: 0.5em 0.5em;
+    text-align: left;
+}

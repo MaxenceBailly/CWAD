@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding: 1em;
+    padding: 2em 1em;
 }
 
 .planet ul::-webkit-scrollbar {
@@ -21,7 +21,7 @@
     justify-content: space-around;
     background-color: rgb(16, 16, 16);
     min-width: 15em;
-    width: 20vw;
+    width: 20em;
     text-align: center;
     border-radius: 1em;
     height: 25em;
@@ -45,4 +45,33 @@
     max-height: 100%;
     object-fit: contain;
     border-radius: 0.5em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section article {
+    border: 1px black solid;
+    border-radius: 1em;
+    max-width: 25em;
+    max-height: 40em;
+    margin: 1em;
+    padding: 1em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section article h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section article p {
+    text-align: justify;
+    width: 100%;
 }

@@ -16,7 +16,16 @@
                 <a href="./croisiere.html">Croisière</a>
                 <a href="./billetterie.html">Billetterie</a>
                 <a class="selected" href="./contact.html">Contact</a>
-                <a href="#">Langue</a>
+                <a class="lang-container">
+                    <img class="icons hover lang" src="./images/icons/languages2.png" alt="">
+                    <ul id="nav-lang">
+                        <li>Gruk</li>
+                        <li>Français</li>
+                        <li>English</li>
+                        <li>Espanol</li>
+                        <li>Portugês</li>
+                    </ul>
+                </a>
             </nav>
 
             <div id="nav-button">
@@ -35,10 +44,36 @@
             </div>
         </header>
 
-        <div class="background-blur">
-            <main>
-            </main>
-        </div>
+        <main>
+            <section class="background-blur">
+                <h1>Informations Contact</h1>
+                <p>Adresse: 14 rue Buleno</p>
+                <p>Téléphone: 06 69 69 69 69</p>
+                <p>mail: maxspace.gk@momail.ni</p>
+                <p>Position:</p>
+                <div class="map"><iframe width="100%" height="600" frameborder="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Bouray-sur-Juine%2091850+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>    
+            </section>
+            <section class="background-blur">
+                <h1>Contactez MaxSpace</h1>
+                <form action="mailto:contact@maxspace.com" method="post" enctype="text/plain">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Votre adresse e-mail">
+
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Le sujet de votre message">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Votre message ici..."></textarea>
+
+                    <div class="form-footer">
+                        <button type="submit">Envoyer le message</button>
+                    </div>
+                </form>
+            </section>
+        </main>
 
         <footer>
             <address>
@@ -48,9 +83,10 @@
                 </a>
             </address>
             <p>© 2024 MaxSpace</p>
-            <p>Maxence Bailly-Maxence Salle-Pierret</p>
+            <p>Maxence Bailly-Maxence Sallé-Pierret</p>
         </footer>
         <script src="nav.js"></script>
+        <script src="background.js"></script>
     </body>
 </html>
 
