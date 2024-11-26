@@ -1,6 +1,50 @@
 @charset "utf-8";
 
-map {
-    margin: 1em;
-    width: 50%;
+main section form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+main section form input, textarea {
+    color: wheat;
+    border: solid wheat 1px;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.647);
+    margin-bottom: 1em;
+}
+
+main section form button {
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.647);
+    border: solid wheat 1px;
+    border-radius: 1em;
+    width: 30%;
+    align-self: center;
+}
+
+main .infos .box {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .infos .box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1px;
+    border-radius: 1em;
+    padding: 1em;
+    width: 100%;
+    max-width: 30em;
+    margin: 1em 0;
+}
+
+main .infos .box div iframe {
+    border-radius: 1em;
+    height: 20em;
 }

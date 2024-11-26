@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    padding-top: 5em;
+    padding-top: 12vh;
 }
 
 footer {
@@ -14,30 +14,73 @@ main .formules {
     justify-content: center;
 }
 
-main .formules div h2 {
+main .formules .carte h2 {
     font-size: 1.5em;
+    border-bottom: white solid 1px;
 }
 
-main .formules div {
+main .formules .carte {
     max-width: 18em;
     max-height: 30em;
-    overflow: scroll;
     background-color: rgba(22, 21, 21, 0.852);
     border-radius: 1em;
-    margin: 1em 1em;
+    margin: 1em;
     transition: transform 0.4s ease;
 }
 
-main .formules div:hover {
+main .formules .carte:hover {
     transform: translateY(-0.5em);
 }
 
-main .formules div img {
+main .formules .carte img {
     width: 100%;
     border-radius: 1em 1em 0 0;
 }
 
-main .formules div p {
+main .formules .carte div {
+    max-height: 20%;
+    overflow-y: scroll;
+}
+
+main .formules .carte div p {
     margin: 0.5em 0.5em;
     text-align: left;
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+}
+
+main section form fieldset {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+main section form fieldset div {
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30em;
+}
+
+main section form fieldset div input, textarea, select {
+    color: wheat;
+    border: solid wheat 1px;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.647);
+}
+
+main section form button {
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.647);
+    border: solid wheat 1px;
+    border-radius: 1em;
+    width: 30%;
+    align-self: center;
 }
