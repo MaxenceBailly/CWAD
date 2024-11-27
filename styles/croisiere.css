@@ -57,13 +57,14 @@ section article {
     border: 1px black solid;
     border-radius: 1em;
     max-width: 25em;
-    max-height: 40em;
+    max-height: 30em;
     margin: 1em;
     padding: 1em 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
 section article h3 {
@@ -74,4 +75,11 @@ section article h3 {
 section article p {
     text-align: justify;
     width: 100%;
+}
+
+section img {
+    margin-top: 1em;
+    border-radius: 1em;
+    width: 100%;
+    max-width: 20em;
 }

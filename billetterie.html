@@ -52,12 +52,10 @@
                     <img src="./images/formules/normal.png" alt="">
                     <h2>Normal</h2>
                     <div>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
+                        <p>- Hébergement en cabine standard.</p>
+                        <p>- Accès à tous les espaces publics du vaisseau (restaurant, salle commune, etc.).</p>
+                        <p>- 2 repas par jour inclus.<p>
+                        <p>- Participation gratuite à une activité découverte par jour (exemple : observation des étoiles).</p>
                     </div>
                 </div>
 
@@ -65,24 +63,23 @@
                     <img src="./images/formules/family.png" alt="">
                     <h2>Family</h2>
                     <div>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
+                        <p>- Hébergement en suite familiale avec plusieurs espaces (parents/enfants).</p>
+                        <p>- Activités et ateliers éducatifs pour les enfants (cours d'astronomie, ateliers créatifs).</p>
+                        <p>- Garderie disponible pour les plus jeunes.</p>
+                        <p>- Pass famille pour les infrastructures sportives et de loisirs.</p>
+                        <p>- Réduction pour les groupes à partir de 4 personnes.</p>
                     </div>
                 </div>
 
                 <div class="carte">
                     <img src="./images/formules/luxe.png" alt="">
-                    <h2>Luxe</h2>
+                    <h2>Premium</h2>
                     <div>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
-                        <p>- blablablabla</p>
+                        <p>- Hébergement en suite spacieuse avec vue panoramique sur l'espace.</p>
+                        <p>- 3 repas gastronomiques par jour inclus.</p>
+                        <p>- Accès illimité aux activités de loisir du vaisseau (salles de sport, simulateur spatial, etc.).</p>
+                        <p>- Service de ménages inclus.</p>
+                        <p>- Réduction sur les souvenirs et produits à bord.</p>
                     </div>
                 </div>
             </section>
@@ -119,9 +116,10 @@
                         <div>
                             <label for="formula">Formule choisie :</label>
                             <select id="formula" name="formula" required>
+                                <option value="" disabled selected>-- Choisissez une formule --</option>
                                 <option value="normal">Normal</option>
                                 <option value="family">Family</option>
-                                <option value="luxe">Luxe</option>
+                                <option value="luxe">Premium</option>
                             </select>
                         </div>
 
